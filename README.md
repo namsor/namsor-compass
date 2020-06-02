@@ -1,16 +1,16 @@
 # namsor-compass
-NamSor backtest on COMPAS database using [Aequitas](https://github.com/dssg/aequitas), with their [example analysis of COMPAS](https://github.com/dssg/aequitas/blob/master/docs/source/examples/compas_demo.ipynb) as a reference. 
+[NamSor](https://v2.namsor.com/NamSorAPIv2/apidoc.html) backtest on COMPAS database using [Aequitas](https://github.com/dssg/aequitas), with their [example analysis of COMPAS](https://github.com/dssg/aequitas/blob/master/docs/source/examples/compas_demo.ipynb) as a reference. 
 
 ## 1 Data Preparation
-To Aequitas' [pre-prepared COMPAS data](https://github.com/dssg/aequitas/blob/master/examples/data/compas_for_aequitas.csv) we add predictions for name gender and origin made as made by NamSor API.
+I format ProPublica's [COMPAS data](https://github.com/propublica/compas-analysis/raw/master/compas-scores-two-years.csv) with [a script from Aequitas](https://github.com/dssg/aequitas/blob/master/examples/compas_data_for_aequitas.py) which I modified so it keeps first and last names. I add predictions for name gender and origin made as made by NamSor API. For using the NamSor Python SDK to get predictions for the gender and origin of names I oriented on what I did in my [Bachelor Thesis](https://github.com/LiFaytheGoblin/Gender-Equality-in-CS-Publications/blob/master/01_DataGatheringAndCleaning/03_Gender.ipynb).
 
 ## 2 COMPAS Analysis
-We repeat Aequitas' COMPAS analysis using not the original values but the predictions made by NamSor
+I repeat Aequitas' COMPAS analysis using not the original values but the predictions made by NamSor
 
 ## 3 Fairness Analysis
 How good are NamSor's predictions? And are they equally good for all groups of people? How fair is NamSor? 
 
-To answer these questions we calculate Fairness Measures with the help of Aequitas. Aequitas can calculate the following metrics for groups, where a group is a specific combination of vectors (eg. race, sex):
+To answer these questions I calculate Fairness Measures with the help of Aequitas. Aequitas can calculate the following metrics for groups, where a group is a specific combination of vectors (eg. race, sex):
 
 * True Positive Rate 'tpr'
 * True Negative Rate 'tnr'
@@ -44,5 +44,14 @@ The following fairness conditions are available from Aequitas:
 * Supervised Fairness: Fairness in both Type I and Type II Parity
 * Overall Fairness: Fairness across all parities for all attributes
 
-# 4 Visualization
+## 4 Visualization
 ...
+
+
+## How to run this analysis on your computer
+
+I developed with the following environment
+* Python 3.7.3 installed
+* Anaconda 1.7.2 installed with Jupyter Notebook
+* [Aequitas](https://github.com/dssg/aequitas) downloaded
+* [NamSor 2.0.9 SDK for Python](https://github.com/namsor/namsor-python-sdk2) downloaded (To use, get an API key for NamSor and safe it in a key.txt file the root folder of this repository. The gitignore file is set to ignore the key.txt file.)
