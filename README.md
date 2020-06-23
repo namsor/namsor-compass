@@ -53,5 +53,5 @@ The following fairness conditions are available from Aequitas:
 I developed with the following environment
 * Python 3.7.3 installed
 * Anaconda 1.7.2 installed with Jupyter Notebook
-* [Aequitas](https://github.com/dssg/aequitas) downloaded
+* [Aequitas 38.1](https://github.com/dssg/aequitas) downloaded
 * [NamSor 2.0.9 SDK for Python](https://github.com/namsor/namsor-python-sdk2) downloaded (To use, get an API key for NamSor and safe it in a key.txt file the root folder of this repository. The gitignore file is set to ignore the key.txt file.)
