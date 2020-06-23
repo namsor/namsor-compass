@@ -2,10 +2,12 @@
 [NamSor](https://v2.namsor.com/NamSorAPIv2/apidoc.html) backtest on COMPAS database using [Aequitas](https://github.com/dssg/aequitas), with their [example analysis of COMPAS](https://github.com/dssg/aequitas/blob/master/docs/source/examples/compas_demo.ipynb) as a reference. 
 
 ## 1 Data Preparation
-I format ProPublica's [COMPAS data](https://github.com/propublica/compas-analysis/raw/master/compas-scores-two-years.csv) with [a script from Aequitas](https://github.com/dssg/aequitas/blob/master/examples/compas_data_for_aequitas.py) which I modified so it keeps first and last names. I add predictions for name gender and origin made as made by NamSor API. For using the NamSor Python SDK to get predictions for the gender and origin of names I oriented on what I did in my [Bachelor Thesis](https://github.com/LiFaytheGoblin/Gender-Equality-in-CS-Publications/blob/master/01_DataGatheringAndCleaning/03_Gender.ipynb).
+I format the [original COMPAS data from ProPublica](https://github.com/propublica/compas-analysis/blob/master/compas-scores-two-years.csv) with [a script from Aequitas](https://github.com/dssg/aequitas/blob/master/examples/compas_data_for_aequitas.py) which I modified so it keeps first and last names. I add predictions for name gender and origin made as made by NamSor API. For using the NamSor Python SDK to get predictions for the gender and origin of names I oriented on what I did in my [Bachelor Thesis](https://github.com/LiFaytheGoblin/Gender-Equality-in-CS-Publications/blob/master/01_DataGatheringAndCleaning/03_Gender.ipynb).
 
 ## 2 COMPAS Analysis
-I repeat Aequitas' COMPAS analysis using not the original values but the predictions made by NamSor
+I repeat Aequitas' COMPAS analysis using not the original values but the predictions made by NamSor. 
+
+For a critical review of ProPublica's original analysis see [Anthony et. al 2016](https://www.researchgate.net/publication/306032039_False_Positives_False_Negatives_and_False_Analyses_A_Rejoinder_to_Machine_Bias_There's_Software_Used_Across_the_Country_to_Predict_Future_Criminals_And_it's_Biased_Against_Blacks).
 
 ## 3 Fairness Analysis
 How good are NamSor's predictions? And are they equally good for all groups of people? How fair is NamSor? 
