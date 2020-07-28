@@ -3,21 +3,21 @@
     <tr style="text-align: right;">
       <th></th>
       <th></th>
-      <th>TypeI Parity</th>
-      <th>Supervised Fairness</th>
-      <th>Unsupervised Fairness</th>
-      <th>TNR Parity</th>
-      <th>Equalized Odds</th>
-      <th>Precision Parity</th>
-      <th>NPV Parity</th>
-      <th>TPR Parity</th>
-      <th>FPR Parity</th>
-      <th>Statistical Parity</th>
-      <th>TypeII Parity</th>
-      <th>Impact Parity</th>
-      <th>FDR Parity</th>
       <th>FNR Parity</th>
       <th>FOR Parity</th>
+      <th>Unsupervised Fairness</th>
+      <th>FDR Parity</th>
+      <th>TypeII Parity</th>
+      <th>Supervised Fairness</th>
+      <th>Equalized Odds</th>
+      <th>TNR Parity</th>
+      <th>FPR Parity</th>
+      <th>NPV Parity</th>
+      <th>Precision Parity</th>
+      <th>TypeI Parity</th>
+      <th>TPR Parity</th>
+      <th>Impact Parity</th>
+      <th>Statistical Parity</th>
     </tr>
     <tr>
       <th>model_id</th>
@@ -44,6 +44,11 @@
       <th rowspan="6" valign="top">0.1</th>
       <th>Female African-American</th>
       <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
       <td>False</td>
       <td>False</td>
       <td>False</td>
@@ -51,16 +56,16 @@
       <td>True</td>
       <td>False</td>
       <td>True</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
       <td>True</td>
       <td>False</td>
-      <td>False</td>
-      <td>True</td>
     </tr>
     <tr>
       <th>Female Caucasian</th>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
       <td>False</td>
       <td>False</td>
       <td>False</td>
@@ -69,16 +74,16 @@
       <td>True</td>
       <td>False</td>
       <td>True</td>
-      <td>False</td>
-      <td>False</td>
-      <td>True</td>
       <td>True</td>
       <td>False</td>
-      <td>True</td>
-      <td>True</td>
     </tr>
     <tr>
       <th>Female Hispanic</th>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
       <td>False</td>
       <td>False</td>
       <td>False</td>
@@ -87,31 +92,26 @@
       <td>True</td>
       <td>False</td>
       <td>True</td>
-      <td>False</td>
-      <td>False</td>
-      <td>True</td>
       <td>True</td>
       <td>False</td>
-      <td>True</td>
-      <td>True</td>
     </tr>
     <tr>
       <th>Male African-American</th>
       <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
       <td>False</td>
       <td>False</td>
       <td>False</td>
       <td>False</td>
       <td>True</td>
       <td>True</td>
-      <td>True</td>
-      <td>False</td>
-      <td>False</td>
       <td>False</td>
       <td>True</td>
-      <td>False</td>
-      <td>False</td>
       <td>True</td>
+      <td>False</td>
     </tr>
     <tr>
       <th>Male Caucasian</th>
@@ -133,6 +133,11 @@
     </tr>
     <tr>
       <th>Male Hispanic</th>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
       <td>False</td>
       <td>False</td>
       <td>False</td>
@@ -141,35 +146,33 @@
       <td>True</td>
       <td>False</td>
       <td>True</td>
-      <td>False</td>
-      <td>False</td>
-      <td>True</td>
       <td>True</td>
       <td>False</td>
-      <td>True</td>
-      <td>True</td>
     </tr>
     <tr>
       <th rowspan="6" valign="top">0.2</th>
       <th>Female African-American</th>
       <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
       <td>False</td>
       <td>False</td>
       <td>False</td>
       <td>False</td>
       <td>True</td>
       <td>True</td>
-      <td>True</td>
-      <td>False</td>
-      <td>False</td>
       <td>False</td>
       <td>True</td>
-      <td>False</td>
-      <td>False</td>
       <td>True</td>
+      <td>False</td>
     </tr>
     <tr>
       <th>Female Caucasian</th>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
       <td>False</td>
       <td>False</td>
       <td>False</td>
@@ -178,11 +181,8 @@
       <td>True</td>
       <td>False</td>
       <td>True</td>
-      <td>True</td>
-      <td>False</td>
       <td>False</td>
       <td>True</td>
-      <td>False</td>
       <td>True</td>
       <td>False</td>
     </tr>
@@ -193,34 +193,34 @@
       <td>False</td>
       <td>False</td>
       <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
       <td>True</td>
       <td>False</td>
       <td>True</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
       <td>True</td>
-      <td>False</td>
-      <td>False</td>
       <td>False</td>
     </tr>
     <tr>
       <th>Male African-American</th>
       <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
       <td>False</td>
       <td>False</td>
       <td>False</td>
       <td>False</td>
       <td>True</td>
       <td>True</td>
-      <td>True</td>
-      <td>False</td>
-      <td>False</td>
       <td>False</td>
       <td>True</td>
-      <td>False</td>
-      <td>False</td>
       <td>True</td>
+      <td>False</td>
     </tr>
     <tr>
       <th>Male Caucasian</th>
@@ -242,6 +242,11 @@
     </tr>
     <tr>
       <th>Male Hispanic</th>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
       <td>False</td>
       <td>False</td>
       <td>False</td>
@@ -250,11 +255,6 @@
       <td>True</td>
       <td>False</td>
       <td>True</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>True</td>
-      <td>False</td>
       <td>True</td>
       <td>False</td>
     </tr>
@@ -262,36 +262,36 @@
       <th rowspan="6" valign="top">0.3</th>
       <th>Female African-American</th>
       <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
       <td>False</td>
       <td>False</td>
       <td>False</td>
       <td>False</td>
       <td>True</td>
       <td>True</td>
-      <td>True</td>
-      <td>False</td>
-      <td>False</td>
       <td>False</td>
       <td>True</td>
-      <td>False</td>
-      <td>False</td>
       <td>True</td>
+      <td>False</td>
     </tr>
     <tr>
       <th>Female Caucasian</th>
+      <td>True</td>
+      <td>False</td>
       <td>False</td>
       <td>False</td>
       <td>False</td>
       <td>False</td>
       <td>True</td>
-      <td>True</td>
-      <td>False</td>
-      <td>True</td>
-      <td>True</td>
-      <td>False</td>
       <td>False</td>
       <td>True</td>
       <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
       <td>True</td>
       <td>False</td>
     </tr>
@@ -302,34 +302,34 @@
       <td>False</td>
       <td>False</td>
       <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
       <td>True</td>
       <td>False</td>
       <td>True</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
       <td>True</td>
-      <td>False</td>
-      <td>False</td>
       <td>False</td>
     </tr>
     <tr>
       <th>Male African-American</th>
       <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
       <td>False</td>
       <td>False</td>
       <td>False</td>
       <td>False</td>
       <td>True</td>
       <td>True</td>
-      <td>True</td>
-      <td>False</td>
-      <td>False</td>
       <td>False</td>
       <td>True</td>
-      <td>False</td>
-      <td>False</td>
       <td>True</td>
+      <td>False</td>
     </tr>
     <tr>
       <th>Male Caucasian</th>
@@ -351,6 +351,11 @@
     </tr>
     <tr>
       <th>Male Hispanic</th>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
       <td>False</td>
       <td>False</td>
       <td>False</td>
@@ -359,11 +364,6 @@
       <td>True</td>
       <td>False</td>
       <td>True</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-      <td>True</td>
-      <td>False</td>
       <td>True</td>
       <td>False</td>
     </tr>
@@ -371,36 +371,36 @@
       <th rowspan="6" valign="top">0.4</th>
       <th>Female African-American</th>
       <td>False</td>
+      <td>True</td>
       <td>False</td>
       <td>False</td>
-      <td>False</td>
-      <td>True</td>
-      <td>True</td>
-      <td>True</td>
-      <td>True</td>
-      <td>True</td>
       <td>False</td>
       <td>False</td>
       <td>True</td>
       <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
       <td>False</td>
       <td>True</td>
+      <td>True</td>
+      <td>False</td>
     </tr>
     <tr>
       <th>Female Caucasian</th>
+      <td>True</td>
+      <td>False</td>
       <td>False</td>
       <td>False</td>
       <td>False</td>
       <td>False</td>
       <td>True</td>
-      <td>True</td>
-      <td>False</td>
-      <td>True</td>
-      <td>True</td>
-      <td>False</td>
       <td>False</td>
       <td>True</td>
       <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
       <td>True</td>
       <td>False</td>
     </tr>
@@ -410,35 +410,35 @@
       <td>False</td>
       <td>False</td>
       <td>False</td>
-      <td>True</td>
-      <td>True</td>
-      <td>False</td>
-      <td>True</td>
-      <td>True</td>
       <td>False</td>
       <td>False</td>
       <td>True</td>
       <td>False</td>
+      <td>True</td>
       <td>False</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
       <td>False</td>
     </tr>
     <tr>
       <th>Male African-American</th>
       <td>False</td>
+      <td>True</td>
       <td>False</td>
       <td>False</td>
-      <td>False</td>
-      <td>True</td>
-      <td>True</td>
-      <td>True</td>
-      <td>True</td>
-      <td>True</td>
       <td>False</td>
       <td>False</td>
       <td>True</td>
       <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
       <td>False</td>
       <td>True</td>
+      <td>True</td>
+      <td>False</td>
     </tr>
     <tr>
       <th>Male Caucasian</th>
@@ -465,15 +465,15 @@
       <td>False</td>
       <td>False</td>
       <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
       <td>True</td>
       <td>False</td>
       <td>True</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
       <td>True</td>
-      <td>False</td>
-      <td>False</td>
       <td>False</td>
     </tr>
   </tbody>
