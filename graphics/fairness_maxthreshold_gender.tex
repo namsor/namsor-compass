@@ -1,17 +1,12 @@
-\begin{tabular}{llllllllllll}
+\begin{tabular}{lllllllllll}
 \toprule
-{} &      attribute\_name &          attribute\_value &  Precision Parity &  FPR Parity &  Equalized Odds &  Statistical Parity &  TPR Parity &  Supervised Fairness &  Impact Parity &  TypeI Parity &  Unsupervised Fairness \\
+{} &          attribute\_value &  Statistical Parity &  Impact Parity &  Precision Parity &  FPR Parity &  TPR Parity &  Equalized Odds &  TypeI Parity &  Supervised Fairness &  Unsupervised Fairness \\
 \midrule
-0  &                 sex &                   Female &              True &        True &            True &               False &        True &                False &           True &         False &                  False \\
-1  &                 sex &                     Male &              True &        True &            True &                True &        True &                False &           True &          True &                   True \\
-2  &                race &         African-American &              True &        True &            True &               False &        True &                False &           True &         False &                  False \\
-3  &                race &                Caucasian &              True &        True &            True &                True &        True &                False &           True &          True &                   True \\
-4  &                race &                 Hispanic &              True &        True &            True &               False &        True &                False &           True &         False &                  False \\
-5  &  combined\_attribute &  Female African-American &              True &        True &            True &               False &        True &                False &           True &         False &                  False \\
-6  &  combined\_attribute &         Female Caucasian &              True &        True &            True &               False &        True &                False &           True &         False &                  False \\
-7  &  combined\_attribute &          Female Hispanic &              True &        True &            True &               False &        True &                False &           True &         False &                  False \\
-8  &  combined\_attribute &    Male African-American &              True &        True &            True &               False &        True &                False &           True &         False &                  False \\
-9  &  combined\_attribute &           Male Caucasian &              True &        True &            True &                True &        True &                False &           True &          True &                   True \\
-10 &  combined\_attribute &            Male Hispanic &              True &        True &            True &               False &        True &                False &           True &          True &                  False \\
+0 &  Female African-American &               False &           True &              True &        True &        True &            True &         False &                False &                  False \\
+1 &         Female Caucasian &               False &           True &              True &        True &        True &            True &         False &                False &                  False \\
+2 &          Female Hispanic &               False &           True &              True &        True &        True &            True &         False &                False &                  False \\
+3 &    Male African-American &               False &           True &              True &        True &        True &            True &         False &                False &                  False \\
+4 &           Male Caucasian &                True &           True &              True &        True &        True &            True &          True &                 True &                   True \\
+5 &            Male Hispanic &               False &           True &              True &       False &        True &           False &         False &                False &                  False \\
 \bottomrule
 \end{tabular}
